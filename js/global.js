@@ -111,3 +111,34 @@ if (document.querySelector(darkLightBtn)) {
 
 }
 */
+
+
+
+
+/*
+ *
+ * Scroll down button
+ *
+ */
+
+/*if (document.querySelector(scrollDownIntroBtn)) {
+
+  document.querySelector(scrollDownIntroBtn).addEventListener('click', function (e) {
+    document.querySelector('.js-intro-container').scrollIntoView({ behavior: "smooth", block: "start" });
+  });
+
+}*/
+
+function setupScrollOnClick(scrollBtnSelector, targetSelector) {
+  const scrollBtn = document.querySelector(scrollBtnSelector);
+  const targetElement = document.querySelector(targetSelector);
+
+  if (scrollBtn && targetElement) {
+    scrollBtn.addEventListener('click', function (e) {
+      targetElement.scrollIntoView({ behavior: "smooth", block: "start" });
+    });
+  }
+}
+
+setupScrollOnClick('.js-scroll-down-intro', '.js-intro-container');
+setupScrollOnClick('.js-scroll-down-content', '.js-content-container');
