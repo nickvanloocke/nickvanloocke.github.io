@@ -2,4 +2,4 @@
 
 Custom website for Nick Van Loocke
 
-This website will be also made visible on www.nickvanloocke.be
+This website will be made visible on www.nickvanloocke.be
