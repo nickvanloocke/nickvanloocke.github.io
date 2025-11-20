@@ -616,6 +616,39 @@ hr::before {
   opacity: 0;
 }
 
+.link--open {
+  padding-left: 2.5rem;
+}
+
+.link--open svg {
+  display: inline-block;
+  animation: wiggle 2.5s ease-out infinite;
+}
+
+.link--open:hover svg {
+  animation-play-state: paused;
+}
+
+@keyframes wiggle {
+  0%,
+  100% {
+    transform: rotate(-10deg);
+  }
+  50% {
+    transform: rotate(7deg);
+  }
+}
+
+
+.open {
+  position: absolute;
+  left: 0;
+  fill: var(--white);
+  width: 2rem;
+  height: auto;
+  transform: rotate(-5deg);
+}
+
 
 
 
@@ -714,7 +747,7 @@ hr::before {
 
 
 /* responsive mode */
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 910px) {
 
   .container {
     display: block;
