@@ -181,6 +181,7 @@ body.is-loaded .container {
   background-color: black;
   pointer-events: none;
   mix-blend-mode: soft-light;
+  opacity: 0.8;
 }
 
 
@@ -644,9 +645,22 @@ hr::before {
   opacity: 0.8;
 }
 
-.footer__credits span {
+.footer__credits__list {
   display: flex;
+  flex-flow: row wrap;
   align-items: center;
+}
+
+.footer__credits__list-item {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+
+  &:not(:last-child) {
+    margin-right: 0.5rem;
+    padding-right: 1rem;
+    border-right: 0.1rem solid rgba(255, 255, 255, 0.5);
+  }
 }
 
 .footer__credits__icon {
@@ -805,6 +819,25 @@ hr::before {
 
   .follow {
     display: none;
+  }
+
+  .footer__credits__list {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .footer__credits__list-item {
+
+    &:not(:last-child) {
+      margin-right: 0;
+      padding-right: 0;
+      border: none;
+    }
+
+  }
+
+  .footer__credits__location {
+    margin-left: -1rem;
   }
 
 }

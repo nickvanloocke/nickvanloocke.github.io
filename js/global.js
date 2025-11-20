@@ -5,8 +5,8 @@
  */
 gsap.set('.follow', {xPercent: -50, yPercent: -50});
 
-let xTo = gsap.quickTo('.follow', 'x', {duration: 0.6, ease: 'power3'}),
-    yTo = gsap.quickTo('.follow', 'y', {duration: 0.6, ease: 'power3'});
+let xTo = gsap.quickTo('.follow', 'x', {duration: 0.3, ease: 'power3'}),
+    yTo = gsap.quickTo('.follow', 'y', {duration: 0.3, ease: 'power3'});
 
 window.addEventListener('mousemove', e => {
   xTo(e.clientX);
