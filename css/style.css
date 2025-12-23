@@ -122,6 +122,12 @@ body.is-loaded .container {
 
 
 /* container */
+@supports (-webkit-touch-callout: none) { /* Safari only */
+  .container {
+    padding: 4rem 0;
+  }
+}
+
 .container {
   display: flex;
   align-items: center;
@@ -245,6 +251,13 @@ body.is-loaded .container {
 
 
 /* main */
+
+@supports (-webkit-touch-callout: none) { /* Safari only */
+  .main-container {
+    overflow: auto;
+  }
+}
+
 .main-container {
   overflow: scroll;
   width: 100%;
