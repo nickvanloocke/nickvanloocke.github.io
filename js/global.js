@@ -142,3 +142,18 @@ function setupScrollOnClick(scrollBtnSelector, targetSelector) {
 
 setupScrollOnClick('.js-scroll-down-intro', '.js-intro-container');
 setupScrollOnClick('.js-scroll-down-content', '.js-content-container');
+
+
+
+
+/*
+ *
+ * Is Safari browser
+ *
+ */
+
+const isSafari =/^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+
+if (isSafari) {
+  document.documentElement.classList.add('is-safari');
+}
