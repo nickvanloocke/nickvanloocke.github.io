@@ -245,6 +245,10 @@ body.is-loaded .container {
   height: auto;
 }
 
+.logo path {
+  stroke: var(--white);
+}
+
 
 
 
