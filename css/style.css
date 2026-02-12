@@ -628,24 +628,16 @@ hr::before {
   opacity: 0;
 }
 
-.freelance {
-  overflow: hidden;
-  display: inline-flex;
-  position: relative;
-  color: var(--white);
-  text-decoration: none;
-}
-
-.freelance--open {
+.link--open {
   padding-left: 2.5rem;
 }
 
-.freelance--open svg {
+.link--open svg {
   display: inline-block;
   animation: wiggle 2.5s ease-out infinite;
 }
 
-.freelance--open:hover svg {
+.link--open:hover svg {
   animation-play-state: paused;
 }
 
