@@ -290,7 +290,7 @@ body.is-loaded .container {
 .title {
   width: 100%;
   margin-bottom: 3rem;
-  font-size: clamp(4rem, 8vw, 10rem);
+  font-size: clamp(4rem, 8vw, 9rem);
   font-family: 'Kulim Park';
   font-weight: 600;
   text-transform: uppercase;
@@ -535,7 +535,7 @@ hr::before {
   overflow: hidden;
   position: relative;
   z-index: 15;
-  padding: 1.2rem 1.6rem 1.2rem 1rem;
+  padding: 1.2rem 2.2rem 1.2rem 1rem;
   background-color: rgba(0, 0, 0, 0.1);
   border-radius: 0.2rem;
   text-decoration: none;
@@ -860,7 +860,7 @@ hr::before {
 
   .content-experience {
     width: 80%;
-    font-size: 1.8rem;
+    font-size: 2.1rem;
   }
 
   .follow {
