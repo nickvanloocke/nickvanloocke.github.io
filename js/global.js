@@ -32,7 +32,7 @@ function typewriterEffect(element, text, delay = 200) {
         let span = document.createElement('span');
         span.textContent = char;
         span.style.opacity = 0;
-        span.style.transition = 'opacity 0.2s ease-in';
+        span.style.transition = 'opacity 0.15s ease-in';
 
         setTimeout(() => {
             span.style.opacity = 1;
@@ -51,7 +51,7 @@ if (!!isReduced) {
   // Yes to the animation
   const titlet = document.querySelector('.js-typewriter');
   const textContent = titlet.textContent;
-  typewriterEffect(titlet, textContent, 60);
+  typewriterEffect(titlet, textContent, 40);
 }
 
 
@@ -94,24 +94,6 @@ if (window.matchMedia) {
   document.querySelector(body).classList.toggle('light-mode'); // Default
 }
 
-// Add event listener for the dark - light mode button
-/*
-if (document.querySelector(darkLightBtn)) {
-
-  document.querySelector(darkLightBtn).addEventListener('click', function (e) {
-
-    if(document.querySelector(body).classList.contains('light-mode')) {
-      document.querySelector(body).classList.remove('light-mode');
-      document.querySelector(body).classList.add('dark-mode');
-    } else {
-      document.querySelector(body).classList.remove('dark-mode');
-      document.querySelector(body).classList.add('light-mode');
-    }
-  });
-
-}
-*/
-
 
 
 
@@ -120,14 +102,6 @@ if (document.querySelector(darkLightBtn)) {
  * Scroll down button
  *
  */
-
-/*if (document.querySelector(scrollDownIntroBtn)) {
-
-  document.querySelector(scrollDownIntroBtn).addEventListener('click', function (e) {
-    document.querySelector('.js-intro-container').scrollIntoView({ behavior: "smooth", block: "start" });
-  });
-
-}*/
 
 function setupScrollOnClick(scrollBtnSelector, targetSelector) {
   const scrollBtn = document.querySelector(scrollBtnSelector);
