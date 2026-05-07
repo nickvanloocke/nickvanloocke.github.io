@@ -3,6 +3,7 @@
  * Cursor follow
  *
  */
+
 gsap.set('.follow', {xPercent: -50, yPercent: -50});
 
 let xTo = gsap.quickTo('.follow', 'x', {duration: 0.3, ease: 'power3'}),
@@ -12,6 +13,23 @@ window.addEventListener('mousemove', e => {
   xTo(e.clientX);
   yTo(e.clientY);
 });
+
+
+
+
+/*
+ *
+ * Title animation (vanilla js)
+ *
+ */
+
+const path = document.querySelector(".js-logo-svg");
+const length = path.getTotalLength();
+
+path.style.strokeDasharray = length;
+path.style.strokeDashoffset = length;
+
+path.style.animation = "draw 1s cubic-bezier(0.65, 0, 0.35, 1) forwards";
 
 
 
